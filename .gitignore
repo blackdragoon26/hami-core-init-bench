@@ -1,0 +1,5 @@
+build/
+hami-core-rw/
+hami-core-pr253/
+*.o
+*.cache

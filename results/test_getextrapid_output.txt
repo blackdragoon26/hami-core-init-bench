@@ -1,0 +1,16 @@
+HAMi-core getextrapid() — concurrent-container host PID detection
+real getextrapid() from src/utils.c, commit 5496322
+
+  1 exclusive probe (old node-global lock)       -> returned 4242   expected 4242    OK
+  2 concurrent container, listed before me       -> returned 3131   expected 4242    *** MISATTRIBUTED ***
+      getextrapid returns the FIRST pid present in `current` and absent from
+      `previous`. It has no way to tell which of the new pids is the caller,
+      so the caller adopts another container's host PID.
+  3 concurrent container, listed after me        -> returned 4242   expected 4242    OK
+  4 three containers racing, me listed last      -> returned 3131   expected 4242    *** MISATTRIBUTED ***
+      with N concurrent probes the caller has a 1/N chance of being right
+
+2 of 4 cases misattributed.
+
+Cases 2 and 4 are unreachable while host-PID detection holds a
+node-global lock, and reachable once it holds a per-container one.

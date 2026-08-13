@@ -1,0 +1,55 @@
+# HAMi-core shared-region init sweep
+# commit: 5496322
+# kernel: 6.12.76-linuxkit  arch: aarch64  nproc: 8
+# repeats per point: 5
+#
+{"nproc":1,"reported":1,"failed":0,"wall_ms":6.834,"p50_ms":6.569,"p95_ms":6.569,"max_ms":6.569, "repeat":1}
+{"nproc":1,"reported":1,"failed":0,"wall_ms":0.685,"p50_ms":0.551,"p95_ms":0.551,"max_ms":0.551, "repeat":2}
+{"nproc":1,"reported":1,"failed":0,"wall_ms":0.749,"p50_ms":0.616,"p95_ms":0.616,"max_ms":0.616, "repeat":3}
+{"nproc":1,"reported":1,"failed":0,"wall_ms":0.558,"p50_ms":0.442,"p95_ms":0.442,"max_ms":0.442, "repeat":4}
+{"nproc":1,"reported":1,"failed":0,"wall_ms":0.526,"p50_ms":0.420,"p95_ms":0.420,"max_ms":0.420, "repeat":5}
+{"nproc":2,"reported":2,"failed":0,"wall_ms":1.112,"p50_ms":0.897,"p95_ms":0.897,"max_ms":0.897, "repeat":1}
+{"nproc":2,"reported":2,"failed":0,"wall_ms":0.712,"p50_ms":0.608,"p95_ms":0.608,"max_ms":0.608, "repeat":2}
+{"nproc":2,"reported":2,"failed":0,"wall_ms":1.189,"p50_ms":1.025,"p95_ms":1.025,"max_ms":1.025, "repeat":3}
+{"nproc":2,"reported":2,"failed":0,"wall_ms":0.584,"p50_ms":0.506,"p95_ms":0.506,"max_ms":0.506, "repeat":4}
+{"nproc":2,"reported":2,"failed":0,"wall_ms":1.021,"p50_ms":0.806,"p95_ms":0.806,"max_ms":0.806, "repeat":5}
+{"nproc":4,"reported":4,"failed":0,"wall_ms":1.194,"p50_ms":0.815,"p95_ms":0.987,"max_ms":0.987, "repeat":1}
+{"nproc":4,"reported":4,"failed":0,"wall_ms":1.459,"p50_ms":0.739,"p95_ms":1.266,"max_ms":1.266, "repeat":2}
+{"nproc":4,"reported":4,"failed":0,"wall_ms":0.796,"p50_ms":0.470,"p95_ms":0.570,"max_ms":0.570, "repeat":3}
+{"nproc":4,"reported":4,"failed":0,"wall_ms":1.263,"p50_ms":0.621,"p95_ms":1.112,"max_ms":1.112, "repeat":4}
+{"nproc":4,"reported":4,"failed":0,"wall_ms":1.363,"p50_ms":1.057,"p95_ms":1.125,"max_ms":1.125, "repeat":5}
+{"nproc":8,"reported":8,"failed":0,"wall_ms":2.774,"p50_ms":0.929,"p95_ms":2.570,"max_ms":2.570, "repeat":1}
+{"nproc":8,"reported":8,"failed":0,"wall_ms":2.377,"p50_ms":1.140,"p95_ms":2.167,"max_ms":2.167, "repeat":2}
+{"nproc":8,"reported":8,"failed":0,"wall_ms":2.099,"p50_ms":0.971,"p95_ms":1.609,"max_ms":1.609, "repeat":3}
+{"nproc":8,"reported":8,"failed":0,"wall_ms":2.040,"p50_ms":1.223,"p95_ms":1.462,"max_ms":1.462, "repeat":4}
+{"nproc":8,"reported":8,"failed":0,"wall_ms":1.663,"p50_ms":0.880,"p95_ms":1.395,"max_ms":1.395, "repeat":5}
+{"nproc":16,"reported":16,"failed":0,"wall_ms":1.930,"p50_ms":0.671,"p95_ms":1.535,"max_ms":1.770, "repeat":1}
+{"nproc":16,"reported":16,"failed":0,"wall_ms":2.350,"p50_ms":1.013,"p95_ms":1.834,"max_ms":2.017, "repeat":2}
+{"nproc":16,"reported":16,"failed":0,"wall_ms":3.479,"p50_ms":1.622,"p95_ms":2.281,"max_ms":3.005, "repeat":3}
+{"nproc":16,"reported":16,"failed":0,"wall_ms":3.612,"p50_ms":1.368,"p95_ms":2.951,"max_ms":3.180, "repeat":4}
+{"nproc":16,"reported":16,"failed":0,"wall_ms":16.047,"p50_ms":1.034,"p95_ms":1.578,"max_ms":1.593, "repeat":5}
+{"nproc":32,"reported":32,"failed":0,"wall_ms":18.629,"p50_ms":16.239,"p95_ms":17.780,"max_ms":17.998, "repeat":1}
+{"nproc":32,"reported":32,"failed":0,"wall_ms":5.599,"p50_ms":2.007,"p95_ms":4.720,"max_ms":4.986, "repeat":2}
+{"nproc":32,"reported":32,"failed":0,"wall_ms":7.931,"p50_ms":3.282,"p95_ms":7.026,"max_ms":7.503, "repeat":3}
+{"nproc":32,"reported":32,"failed":0,"wall_ms":16.741,"p50_ms":13.067,"p95_ms":15.600,"max_ms":16.351, "repeat":4}
+{"nproc":32,"reported":32,"failed":0,"wall_ms":12.018,"p50_ms":5.382,"p95_ms":10.606,"max_ms":11.769, "repeat":5}
+{"nproc":64,"reported":64,"failed":0,"wall_ms":20.715,"p50_ms":4.725,"p95_ms":16.595,"max_ms":18.174, "repeat":1}
+{"nproc":64,"reported":64,"failed":0,"wall_ms":17.469,"p50_ms":7.174,"p95_ms":14.384,"max_ms":17.234, "repeat":2}
+{"nproc":64,"reported":64,"failed":0,"wall_ms":17.312,"p50_ms":5.209,"p95_ms":13.885,"max_ms":15.998, "repeat":3}
+{"nproc":64,"reported":64,"failed":0,"wall_ms":21.130,"p50_ms":7.653,"p95_ms":18.109,"max_ms":19.319, "repeat":4}
+{"nproc":64,"reported":64,"failed":0,"wall_ms":16.289,"p50_ms":4.960,"p95_ms":12.649,"max_ms":16.092, "repeat":5}
+{"nproc":128,"reported":128,"failed":0,"wall_ms":30.749,"p50_ms":12.484,"p95_ms":25.447,"max_ms":29.022, "repeat":1}
+{"nproc":128,"reported":128,"failed":0,"wall_ms":41.189,"p50_ms":14.708,"p95_ms":35.856,"max_ms":38.500, "repeat":2}
+{"nproc":128,"reported":128,"failed":0,"wall_ms":40.506,"p50_ms":13.774,"p95_ms":35.148,"max_ms":37.717, "repeat":3}
+{"nproc":128,"reported":128,"failed":0,"wall_ms":33.783,"p50_ms":14.063,"p95_ms":28.454,"max_ms":30.958, "repeat":4}
+{"nproc":128,"reported":128,"failed":0,"wall_ms":29.876,"p50_ms":13.528,"p95_ms":26.532,"max_ms":28.061, "repeat":5}
+{"nproc":256,"reported":256,"failed":0,"wall_ms":98.274,"p50_ms":36.746,"p95_ms":86.532,"max_ms":93.842, "repeat":1}
+{"nproc":256,"reported":256,"failed":0,"wall_ms":96.409,"p50_ms":30.183,"p95_ms":78.688,"max_ms":87.478, "repeat":2}
+{"nproc":256,"reported":256,"failed":0,"wall_ms":87.355,"p50_ms":30.476,"p95_ms":75.389,"max_ms":85.670, "repeat":3}
+{"nproc":256,"reported":256,"failed":0,"wall_ms":85.915,"p50_ms":25.832,"p95_ms":74.417,"max_ms":81.625, "repeat":4}
+{"nproc":256,"reported":256,"failed":0,"wall_ms":102.133,"p50_ms":41.724,"p95_ms":90.123,"max_ms":98.839, "repeat":5}
+{"nproc":512,"reported":512,"failed":0,"wall_ms":293.514,"p50_ms":77.973,"p95_ms":256.905,"max_ms":287.153, "repeat":1}
+{"nproc":512,"reported":512,"failed":0,"wall_ms":277.828,"p50_ms":87.060,"p95_ms":249.463,"max_ms":272.876, "repeat":2}
+{"nproc":512,"reported":512,"failed":0,"wall_ms":419.201,"p50_ms":85.342,"p95_ms":378.172,"max_ms":412.262, "repeat":3}
+{"nproc":512,"reported":512,"failed":0,"wall_ms":291.478,"p50_ms":97.451,"p95_ms":254.574,"max_ms":283.027, "repeat":4}
+{"nproc":512,"reported":512,"failed":0,"wall_ms":302.755,"p50_ms":97.069,"p95_ms":268.878,"max_ms":297.681, "repeat":5}
