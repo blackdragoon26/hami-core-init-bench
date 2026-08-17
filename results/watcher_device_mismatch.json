@@ -1,0 +1,84 @@
+{
+  "experiment": "X0b",
+  "baseline_commit": "5496322f2fb3e71bf1eca014fba3c9bc59ab8ffd",
+  "claim": "V11",
+  "model_of": "multiprocess_utilization_watcher.c:212-221",
+  "cases": [
+    {"cvd": "0", "phys_devices": 2, "note": "owns GPU 0 of 2",
+     "iterations": [
+       {"intended_nvml_dev": 0, "cuda_index": 0, "sampled_nvml_dev": 0, "writes_to": "userutil[0]", "mismatch": false},
+       {"intended_nvml_dev": 1, "cuda_index": 1, "sampled_nvml_dev": 1, "writes_to": "userutil[1]", "mismatch": false}
+     ],
+     "case_has_mismatch": false},
+    {"cvd": "1", "phys_devices": 2, "note": "owns GPU 1 of 2",
+     "iterations": [
+       {"intended_nvml_dev": 1, "cuda_index": 0, "sampled_nvml_dev": 0, "writes_to": "userutil[0]", "mismatch": true}
+     ],
+     "case_has_mismatch": true},
+    {"cvd": "0,1", "phys_devices": 2, "note": "identity, 2 GPUs",
+     "iterations": [
+       {"intended_nvml_dev": 0, "cuda_index": 0, "sampled_nvml_dev": 0, "writes_to": "userutil[0]", "mismatch": false},
+       {"intended_nvml_dev": 1, "cuda_index": 1, "sampled_nvml_dev": 1, "writes_to": "userutil[1]", "mismatch": false}
+     ],
+     "case_has_mismatch": false},
+    {"cvd": "1,0", "phys_devices": 2, "note": "reversed, 2 GPUs",
+     "iterations": [
+       {"intended_nvml_dev": 0, "cuda_index": 1, "sampled_nvml_dev": 1, "writes_to": "userutil[1]", "mismatch": true},
+       {"intended_nvml_dev": 1, "cuda_index": 0, "sampled_nvml_dev": 0, "writes_to": "userutil[0]", "mismatch": true}
+     ],
+     "case_has_mismatch": true},
+    {"cvd": "0", "phys_devices": 8, "note": "owns GPU 0 of 8",
+     "iterations": [
+       {"intended_nvml_dev": 0, "cuda_index": 0, "sampled_nvml_dev": 0, "writes_to": "userutil[0]", "mismatch": false},
+       {"intended_nvml_dev": 1, "cuda_index": 1, "sampled_nvml_dev": 1, "writes_to": "userutil[1]", "mismatch": false},
+       {"intended_nvml_dev": 2, "cuda_index": 2, "sampled_nvml_dev": 2, "writes_to": "userutil[2]", "mismatch": false},
+       {"intended_nvml_dev": 3, "cuda_index": 3, "sampled_nvml_dev": 3, "writes_to": "userutil[3]", "mismatch": false},
+       {"intended_nvml_dev": 4, "cuda_index": 4, "sampled_nvml_dev": 4, "writes_to": "userutil[4]", "mismatch": false},
+       {"intended_nvml_dev": 5, "cuda_index": 5, "sampled_nvml_dev": 5, "writes_to": "userutil[5]", "mismatch": false},
+       {"intended_nvml_dev": 6, "cuda_index": 6, "sampled_nvml_dev": 6, "writes_to": "userutil[6]", "mismatch": false},
+       {"intended_nvml_dev": 7, "cuda_index": 7, "sampled_nvml_dev": 7, "writes_to": "userutil[7]", "mismatch": false}
+     ],
+     "case_has_mismatch": false},
+    {"cvd": "3", "phys_devices": 8, "note": "owns GPU 3 of 8",
+     "iterations": [
+       {"intended_nvml_dev": 1, "cuda_index": 1, "sampled_nvml_dev": 1, "writes_to": "userutil[1]", "mismatch": false},
+       {"intended_nvml_dev": 2, "cuda_index": 2, "sampled_nvml_dev": 2, "writes_to": "userutil[2]", "mismatch": false},
+       {"intended_nvml_dev": 3, "cuda_index": 0, "sampled_nvml_dev": 0, "writes_to": "userutil[0]", "mismatch": true},
+       {"intended_nvml_dev": 4, "cuda_index": 4, "sampled_nvml_dev": 4, "writes_to": "userutil[4]", "mismatch": false},
+       {"intended_nvml_dev": 5, "cuda_index": 5, "sampled_nvml_dev": 5, "writes_to": "userutil[5]", "mismatch": false},
+       {"intended_nvml_dev": 6, "cuda_index": 6, "sampled_nvml_dev": 6, "writes_to": "userutil[6]", "mismatch": false},
+       {"intended_nvml_dev": 7, "cuda_index": 7, "sampled_nvml_dev": 7, "writes_to": "userutil[7]", "mismatch": false}
+     ],
+     "case_has_mismatch": true},
+    {"cvd": "2,1", "phys_devices": 8, "note": "descending, 8 GPUs",
+     "iterations": [
+       {"intended_nvml_dev": 1, "cuda_index": 1, "sampled_nvml_dev": 1, "writes_to": "userutil[1]", "mismatch": false},
+       {"intended_nvml_dev": 2, "cuda_index": 0, "sampled_nvml_dev": 0, "writes_to": "userutil[0]", "mismatch": true},
+       {"intended_nvml_dev": 3, "cuda_index": 3, "sampled_nvml_dev": 3, "writes_to": "userutil[3]", "mismatch": false},
+       {"intended_nvml_dev": 4, "cuda_index": 4, "sampled_nvml_dev": 4, "writes_to": "userutil[4]", "mismatch": false},
+       {"intended_nvml_dev": 5, "cuda_index": 5, "sampled_nvml_dev": 5, "writes_to": "userutil[5]", "mismatch": false},
+       {"intended_nvml_dev": 6, "cuda_index": 6, "sampled_nvml_dev": 6, "writes_to": "userutil[6]", "mismatch": false},
+       {"intended_nvml_dev": 7, "cuda_index": 7, "sampled_nvml_dev": 7, "writes_to": "userutil[7]", "mismatch": false}
+     ],
+     "case_has_mismatch": true},
+    {"cvd": "0,1,2,3", "phys_devices": 8, "note": "identity prefix, 8 GPUs",
+     "iterations": [
+       {"intended_nvml_dev": 0, "cuda_index": 0, "sampled_nvml_dev": 0, "writes_to": "userutil[0]", "mismatch": false},
+       {"intended_nvml_dev": 1, "cuda_index": 1, "sampled_nvml_dev": 1, "writes_to": "userutil[1]", "mismatch": false},
+       {"intended_nvml_dev": 2, "cuda_index": 2, "sampled_nvml_dev": 2, "writes_to": "userutil[2]", "mismatch": false},
+       {"intended_nvml_dev": 3, "cuda_index": 3, "sampled_nvml_dev": 3, "writes_to": "userutil[3]", "mismatch": false},
+       {"intended_nvml_dev": 4, "cuda_index": 4, "sampled_nvml_dev": 4, "writes_to": "userutil[4]", "mismatch": false},
+       {"intended_nvml_dev": 5, "cuda_index": 5, "sampled_nvml_dev": 5, "writes_to": "userutil[5]", "mismatch": false},
+       {"intended_nvml_dev": 6, "cuda_index": 6, "sampled_nvml_dev": 6, "writes_to": "userutil[6]", "mismatch": false},
+       {"intended_nvml_dev": 7, "cuda_index": 7, "sampled_nvml_dev": 7, "writes_to": "userutil[7]", "mismatch": false}
+     ],
+     "case_has_mismatch": false}
+  ],
+  "summary": {
+    "cases": 8,
+    "loop_iterations": 37,
+    "mismatched_iterations": 5,
+    "cases_with_mismatch": 4,
+    "v11_falsified": false
+  }
+}

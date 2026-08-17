@@ -1,0 +1,17 @@
+{
+  "experiment": "X0c",
+  "baseline_commit": "5496322f2fb3e71bf1eca014fba3c9bc59ab8ffd",
+  "claims": ["C2", "C3"],
+  "note": "Both tests are EXPECTED TO FAIL on current main.",
+  "tests": [
+    {"id": "C3", "test": "getextrapid rejects a shrinking process list", "result": "FAIL",
+     "detail": "prev=5 current=3 (three exited, peer 9999 appeared, caller absent); expected 0, got 9999"},
+    {"id": "C3b", "test": "unsigned guard is equivalent to current==prev", "result": "FAIL",
+     "detail": "(current-prev)<=0 evaluates FALSE as unsigned but TRUE as signed; cur-prev=4294967294"},
+    {"id": "C2", "test": "mergepid carries usedGpuMemory into the merged array", "result": "FAIL",
+     "detail": "merged 3 entries; sub[0].usedGpuMemory=100663296 but merged[0].usedGpuMemory=0"},
+    {"id": "C2b", "test": "merged and raw indices stay aligned across devices", "result": "FAIL",
+     "detail": "raw=[3001,3002,3001,3003] merged=3 entries; merged[2].pid=3003 vs raw[2].pid=3001 - set_task_pid would read context_size from the wrong process"}
+  ],
+  "summary": {"tests": 4, "failures": 4, "c2_c3_confirmed": true}
+}
